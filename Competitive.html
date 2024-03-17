@@ -75,7 +75,33 @@
         .column3 {
             background-color: lightcoral;
         }
+ .caption {
+            font-size: 20px;
+            text-align: center;
+            color: blue;
+            padding: 20px;
+        }
+       
+        .colspan {
+            font-size: 20px;
+            text-align: center;
+            color: blue;
+            padding: 20px;
+        }
 
+
+        td: colspan {
+            font-family: Italic, monospace;
+            font-size:2 px;
+            color: blue;
+            text-align: center;
+        }
+        td:111{
+            font-family: Italic, monospace;
+            font-size:20 px;
+            color: blue;
+            text-align: center;
+        }
      
     </style>
 </head>
@@ -96,7 +122,7 @@
         <table>
             <tr>
                
-                <td class ="my row"><strong>Competitive Audit Table</strong></td> <!-- Spanning across all columns -->
+                <td class ="my row", colspan = "4"><strong>Competitive Audit Table</strong></td> <!-- Spanning across all columns -->
             </tr>
             <tr>
                 <td colspan="0"> </td>
