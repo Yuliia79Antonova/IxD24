@@ -49,7 +49,9 @@
             width: 100%;
             border-collapse: collapse;
         }
-
+      .my-row {
+       color: blue; 
+       height: 70px; 
         th, td {
             border: 1px solid #ccc;
             padding: 8px;
@@ -72,15 +74,7 @@
             background-color: lightcoral;
         }
 
-       .my-row {
-    background-color: lightgray; /* Изменение цвета фона */
-    height: 50px; /* Изменение высоты строки */
-}
-
-      
-
-        
-        
+     
     </style>
 </head>
 <body>
@@ -99,7 +93,8 @@
     <div class="table-container">
         <table>
             <tr>
-                <td colspan="4"><strong>Competitive Audit Table</strong></td> <!-- Spanning across all columns -->
+               
+                <td class ="my row"><strong>Competitive Audit Table</strong></td> <!-- Spanning across all columns -->
             </tr>
             <tr>
                 <td colspan="0"> </td>
@@ -110,12 +105,7 @@
                 <th class="column1">SoloLearn</th>
                 <th class="column2">Typing.com</th>
                 <th class="column3">CodeCombat</th>
-            </tr>
-            <tr class="my-row">
-    <td class = "colspan"></td>
-    <td>Content 2</td>
-    <td>Content 3</td>
-</tr>
+          </tr>
             <tbody>
             <tr>
                 <td>Engagement: How engaging is the app?<br>
