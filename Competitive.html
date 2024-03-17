@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+   
     <link rel="index"  href="./Competitive.html">
     <style>
         body {
@@ -20,7 +20,7 @@
             padding: 20px;
         }
         .main-content {
-            flex: 1;
+            flex: 0;
             padding: 30px;
         }
         .links {
@@ -46,7 +46,7 @@
         }
 
         table {
-            width: 50%;
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -72,32 +72,15 @@
             background-color: lightcoral;
         }
 
-        .caption {
-            font-size: 20px;
-            text-align: center;
-            color: blue;
-            padding: 20px;
-        }
+       .my-row {
+    background-color: lightgray; /* Изменение цвета фона */
+    height: 50px; /* Изменение высоты строки */
+}
 
-        .colspan {
-            font-size: 20px;
-            text-align: center;
-            color: blue;
-            padding: 20px;
-        }
+      
 
-        td: colspan {
-            font-family: Italic, monospace;
-            font-size:2 px;
-            color: blue;
-            text-align: center;
-        }
-        td:111{
-            font-family: Italic, monospace;
-            font-size:20 px;
-            color: blue;
-            text-align: center;
-        }
+        
+        
     </style>
 </head>
 <body>
@@ -116,7 +99,7 @@
     <div class="table-container">
         <table>
             <tr>
-                <td colspan="4"><strong><span class = "111">Competitive Audit Table</span></strong></td> <!-- Spanning across all columns -->
+                <td colspan="4"><strong>Competitive Audit Table</strong></td> <!-- Spanning across all columns -->
             </tr>
             <tr>
                 <td colspan="0"> </td>
@@ -128,6 +111,11 @@
                 <th class="column2">Typing.com</th>
                 <th class="column3">CodeCombat</th>
             </tr>
+            <tr class="my-row">
+    <td class = "colspan"></td>
+    <td>Content 2</td>
+    <td>Content 3</td>
+</tr>
             <tbody>
             <tr>
                 <td>Engagement: How engaging is the app?<br>
