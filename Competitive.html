@@ -63,21 +63,9 @@
             text-align: left;
         }
 
-        th:column0 {
-            text-align:left;
-        }
-
-        th:column1 {
-           text-align:centre;
-        }
-
-        th:column2 {
-            text-align:centre;
-        }
-
-        th:column3 {
-           text-align:centre;
-        }
+       .table-header th {
+        text-align: center; 
+    }
       
        
            
@@ -96,7 +84,9 @@
 .low-score {
    background-color:lightblue;
 }
-       
+      .name {
+         text-align: center;
+      }
        </style>
 </head>
 <body>
@@ -124,10 +114,13 @@
           
             <tr>
                 <td colspan="0"> </td>
-                <td colspan="3"><strong>Learning apps</strong></td> <!-- Spanning across all columns -->
+                <td colspan="3" class = "name"><strong>Learning apps</strong></td> <!-- Spanning across all columns -->
             </tr>
-            <tr>
-                <th class="column0">Questions</th>
+           <tr>
+           <th class="column0">Questions</th>
+           </tr>
+            <tr class="table-header">
+                
                 <th class="column1">SoloLearn</th>
                 <th class="column2">Typing.com</th>
                 <th class="column3">CodeCombat</th>
