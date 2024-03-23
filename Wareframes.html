@@ -1,49 +1,104 @@
 <!DOCTYPE html>
-<link rel="index" href="./Wareframes.html"  />
 <html>
-<style>
-   body {
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-  }
-  .container {
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-  }
-  .left-sidebar {
-    width: 200px;
-    padding: 20px;
-  }
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  .links {
-    list-style-type: none;
+<head>
+   
+    <link rel="index"  href="./Wareframes.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+        }
+       .container {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+        }
+   .left-sidebar {
+            width: 200px;
+            padding: 20px;
+            
+        }
+        .main-content {
+            flex: 0;
+            padding: 20px;
+        }
+       .links ul {
     padding: 0;
-  }
-  .links li {
-    margin-bottom: 10px;
-  }
-  .links a {
-    display: block;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    color: #333;
-    text-decoration: none;
-  }
-  .links a:hover {
-    background-color: #ccc;
-  }
+    margin: 0;
+       }
+        .links {
+            list-style-type: none;
+            padding: 0;
+        }
 
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: block;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+            text-align:center;
+        }
+
+        .links a:hover {
+            background-color: #ccc;
+        }
+       caption {
+          font-size:34px;
+          text-align:left;
+          margin-bottom: 10px; 
+       }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+     
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+              
+           
+     .table-header {
+        font-size: 24px;
+        color: blue;
+        text-align: center;
+        height: 70px;
+    }
+       .high-score {
+          background-color:pink;
+          vertical-align: top; 
+          text-align: left;
+       }
+       .medium-score {
+          background-color:yellow;
+          vertical-align: top;
+          text-align: left;
+       }
+.low-score {
+   background-color:lightblue;
+   vertical-align: top; 
+   text-align: left;
+}
+      .name {
+         text-align: center;
+      }
+       
        </style>
 </head>
 <body>
+
 <div class="container">
     <div class="left-sidebar">
         <ul class="links">
@@ -54,3 +109,84 @@
             <li><a href="Usability.html">Usability Test</a></li>
         </ul>
     </div>
+
+    <div class="table-container">
+        <table>
+           
+          <caption>Competitive Audit</caption>
+         
+            
+                
+                <td colspan = "4" class="table-header">Competitive Audit</td> <!-- Spanning across all columns -->
+            
+          
+            <tr>
+                <td colspan="0"> </td>
+                <td colspan="3" class = "name"><strong>Learning apps</strong></td> <!-- Spanning across all columns -->
+            </tr>
+           
+            <tr >
+                <th class="column0" style="text-align: left;" >Questions</th>
+                <th class="column1" style="text-align: center;">SoloLearn</th>
+                <th class="column2" style="text-align: center;">Typing.com</th>
+                <th class="column3" style="text-align: center;">CodeCombat</th>
+          </tr>
+            <body>
+            <tr>
+                <td>Engagement: How engaging is the app?<br>
+                    Is it visually appealing?<br>
+                    Does it have sound and animation to capture the user's attention?<br>
+                    Does it have a good balance of challenge and reward?</td>
+                <td class="high-score">SoloLearn offers an engaging learning <br>
+                    experience through interactive lessons and <br>
+                    coding practice.(9/10)</td>
+                <td class="medium-score">Typing.com offers an engaging learning platform with<br>
+                    its interactive typing lessons and games, <br>
+                    ensuring an enjoyable experience for users.(7/10)</td>
+                <td class="low-score">CodeCombat offers an immersive learning experience through<br>
+                    its interactive coding challenges and quests,<br>
+                    making it highly engaging for users of all skill levels.(5/10)</td>
+            </tr>
+            <tr>
+                <td>Progress tracking: <br>
+                    How well does the app track the user's progress? <br>
+                    Does it provide feedback and recommendations to help users improve their performance?<br>
+                    Does it use data to personalize the learning experience?</td>
+                <td class="high-score">SoloLearn effectively tracks user progress, providing valuable,<br>
+                    feedback and recommendations to enhance their learning outcomes,<br>
+                    while also utilizing data for a personalized learning experience.(8/10)</td>
+                <td class="high-score">Typing.com effectively tracks user progress, offering feedback<br>
+                    and recommendations to enhance user performance,<br>
+                    and utilizes data for personalized learning experiences.(8/10)</td>
+                <td class="medium-score">CodeCombat efficiently monitors user progress,  <br>
+                    offers feedback and recommendations for enhancing performance,<br>
+                    and utilizes data to personalize the learning process.(6/10)</td>
+            </tr>
+            <tr>
+                <td>User experience: How user-friendly is the app?<br>
+                    Is it easy to navigate and use?<br>
+                    Does it have clear instructions and prompts?<br>
+                    Does it have a well-designed interface?</td>
+                <td class="medium-score">SoloLearn is user-friendly, with intuitive navigation,<br>
+                    clear instructions, and a well-designed interface,<br>
+                    ensuring ease of use and a seamless learning experience.(6/10)</td>
+                <td class="medium-score">Typing.com provides a user-friendly experience with easy navigation,<br>
+                    clear instructions, helpful hints, and a well-designed interface<br>
+                    ensuring seamless usability and efficient learning.(7/10)</td>
+                <td class="high-score">CodeCombat offers a user-friendly experience with intuitive navigation,<br>
+                    clear instructions, helpful hints,  <br>
+                    and a well-crafted interface, ensuring ease of use and efficient learning.(8/10)</td>
+            </tr>
+            <tr>
+                <td><strong>Total Score</strong></td>
+                <td><strong>23/30</strong></td>
+                <td><strong>22/30</strong></td>
+                <td><strong>19/30</strong></td>
+            </tr>
+            </body>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
